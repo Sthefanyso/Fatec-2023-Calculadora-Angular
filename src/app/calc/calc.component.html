@@ -1,0 +1,21 @@
+<div class="box">
+
+    <h1>CALCULADORA IMC</h1>
+    <h2>Índice de Massa Corporal</h2><br><br>
+
+    <label>Peso</label>
+    <input type="number" name="peso" [(ngModel)]="peso" class="input1"><br><br>
+    <label>Altura</label>
+    <input type="number" name="altura" [(ngModel)]="altura" class="input2"><br><br>
+
+    <button type="button" (click)="imc()" class="btncalcular">Calcular</button><br><br>
+
+    <label class="resultado">Resultado</label><br><br>
+    <label class="classificação">Classificação</label>
+
+    <div class="results">
+    <input [value]= "res" id="resultado" class="results" readonly><br><br>
+    <input [value]= "msg" id="classificação" class="results" readonly>
+    </div>
+
+</div>
